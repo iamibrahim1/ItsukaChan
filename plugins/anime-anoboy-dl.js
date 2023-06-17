@@ -17,10 +17,7 @@ let handler = async (m, { conn, text }) => {
   	} }
     await conn.reply(m.chat, cap, m)
     await apivisit
-	// By Chandra XD
-	// Follow bang
-	// TikTok : @pnggilajacn
-	// Github : https://github.com/Chandra-XD
+	
 	}
 handler.help = ['anoboydl'].map(v => v + ' <id>')
 handler.tags = ['tools']
