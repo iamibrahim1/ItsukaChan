@@ -9,7 +9,7 @@ let handler = async (m, { conn, text }) => {
     let v = res.data
     let linkvi = res.data.video_embed_links
     let miror = res.data.video_mirrors
-    let cap = `*Title :* ${res.data.name || res.data.episode_navigation.nav_name}\n*Synopsis :* ${res.data.synopsis || '-'}\n\n*Link untuk mendownload atau menonton videonya*\n`
+    let cap = `*Title :* ${res.data.name || res.data.episode_navigation.nav_name}\n*Synopsis :* ${res.data.synopsis || '-'}\n\n*Link to download or watch the video*\n`
     for (let x of linkvi) {
     for (let z of miror) {
     cap += `*Download 1 :*\n${x.resolution || '-'} : ${x.link || '-'}\n*Download 2 :*\n${z.resolution || '-'} : ${z.link || '-'}`
