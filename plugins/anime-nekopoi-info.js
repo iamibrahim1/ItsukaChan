@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, usedPrefix: _p }) => {
 	await apivisit
 	} catch {
 	let v = res.stream
-	let cap = `*Title :* ${res.title}\n*Id :* ${res.id || '-'}\n*Date :* ${res.date ||'-'}\n*Deskripsi :* ${res.series.content || 'unknown'}\n\n`
+	let cap = `*Title :* ${res.title}\n*Id :* ${res.id || '-'}\n*Date :* ${res.date ||'-'}\n*Description :* ${res.series.content || 'unknown'}\n\n`
   for (let x of v) {
    cap += `*Link :* ${x.link || '-'}
 `
@@ -22,10 +22,7 @@ cap += '' + '\n'
   	}
      await conn.sendFile(m.chat, res.image || res.series.image, 'nekopoi.jpg', cap, m)
      await apivisit
-	// By Chandra XD
-	// Follow bang
-	// TikTok : @pnggilajacn
-	// Github : https://github.com/Chandra-XD
+	
 	}}
 handler.help = ['nekopoiinfo'].map(v => v + ' <id>')
 handler.tags = ['tools']
