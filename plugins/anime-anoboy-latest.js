@@ -13,10 +13,7 @@ let handler = async (m, { conn, args, usedPrefix: _p }) => {
 	await m.reply(tekss)
 	// await conn.sendMessage(m.chat, { text: `Anoboy Latest`, footer: null, title: null, buttonText: 'Click Here!', sections: [{ title: 'Anoboy', rows: arr }] }, { quoted: m })
 	await apivisit
-	// By Chandra XD
-	// Follow bang
-	// TikTok : @pnggilajacn
-	// Github : https://github.com/Chandra-XD
+	
 	}
 handler.help = ['anoboylatest']
 handler.tags = ['tools']
