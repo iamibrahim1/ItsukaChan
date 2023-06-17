@@ -21,10 +21,7 @@ let handler = async (m, { conn, text }) => {
 			}
 		}
     m.reply(str)
-	// By Chandra XD
-	// Follow bang
-	// TikTok : @pnggilajacn
-	// Github : https://github.com/Chandra-XD
+	
 	}
 handler.help = ['oploverzdl'].map(v => v + ' <url>')
 handler.tags = ['tools']
