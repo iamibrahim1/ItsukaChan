@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix: _p }) => {
 	await apivisit
 	} catch (e) {
 		console.log(e)
-		m.reply(`Terjadi kesalahan atau server sedang mengalami gangguan.`)
+		m.reply(`An error has occurred or the server is down.`)
 	}
 	// By Chandra XD
 	// Follow bang
